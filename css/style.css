@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.5em;
+}
+
+.clear{
+  clear: both;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.highlight{
+  color: #e8491d;
+}
+
+.dark{
+  background-color: #35424a;
+  color: #fff;
+  padding: 15px;
+}
+
+.grey{
+  background-color: #e6e6e6;
+  padding: 15px;
+  border: 1px solid #a9b5bd;
+}
+
+.button1{
+  background-color: #e8491d;
+  color: #fff;
+  border: 0;
+}
+
+.button2{
+  background-color: #e8491d;
+  color: #fff;
+  border: 0;
+  width: 100%;
+  margin: auto;
+  height: 30px;
+  margin: 5px 0px;
+}
+
+/* Header */
+header{
+  min-height: 80px;
+  background-color: #35424a;
+  color: #fff;
+  padding-top: 20px;
+  border-bottom: 5px solid #e8491d;
+}
+
+#logo h1{
+  float: left;
+  font-size: 35px;
+  padding: 2px;
+}
+
+#navbar{
+  float: right;
+  padding-top: 5px;
+}
+
+#navbar ul{
+  display: flex;
+  float: right;
+  align-content: center;
+}
+
+#navbar ul li{
+  font-size: 25px;
+  padding: 0px 20px;
+  list-style: none;
+}
+
+#navbar ul li a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navbar a:hover{
+  color: #fff;
+  font-weight: bold;
+}
+
+ #navbar .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+  background-image: url(https://jolly-kalam-23776e.netlify.app/corps/img/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+#showcase h1{
+  text-align: center;
+  line-height: 1em;
+  padding: 100px 0px 20px 0px;
+  font-size: 50px;
+}
+
+#showcase p{
+  font-size: 25px;
+  padding: 0px 30px;
+  line-height: 1.2em;
+  /*margin: 20px 0px;*/
+}
+
+/* Newsletter */
+#newsletter{
+  background-color: #35424a;
+  color: #fff;
+  min-height: 50px;
+  padding: 10px 0px;
+  padding-bottom: 15px;
+}
+
+#newsletter h3{
+  float: left;
+  font-size: 25px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#newsletter form{
+  float: right;
+}
+
+#newsletter input[type="email"]{
+  height: 30px;
+  width: 250px;
+  margin: 10px 0px;
+  padding-left: 5px;
+}
+
+#newsletter .button1{
+  height: 30px;
+  width: 100px;
+}
+
+/* Boxes */
+#boxes{
+  margin: 20px;
+}
+
+#boxes .container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.box{
+  margin: 20px;
+}
+
+.box img{
+  height: 70px;
+}
+
+.box h3{
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+/* Main */
+#main{
+  margin: 20px 20px 20px 0px;
+  float: left;
+  text-align: center;
+  width: 60%;
+}
+
+#main .box{
+  margin-left: 0;
+}
+
+#main h2{
+  padding: 10px;
+}
+
+#main p{
+  margin: 10px;
+}
+
+/* Sidebar */
+#sidebar{
+  margin: 40px 0px 20px 20px;
+  float: right;
+  text-align: center;
+  width: 30%;
+}
+
+#sidebar h2,
+#form label{
+  text-align: center;
+  margin: 10px 0px;
+}
+
+#form input[type="text"],
+#form input[type="email"]{
+  height: 25px;
+  width: 90%;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+#form textarea{
+  height: 40px;
+  width: 90%;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+/* Footer */
+footer{
+  background-color: #e8491d;
+  color: #fff;
+  min-height: 65px;
+  padding: 20px 0px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p{
+  font-size: 25px;
+}
+
+/* Media queries */
+@media(max-width: 768px){
+  #logo h1,
+  #navbar,
+  #newsletter h3,
+  #newsletter form,
+  #newsletter input[type="email"],
+  #newsletter .button1,
+  #boxes,
+  #boxes .box,
+  #main,
+  #sidebar{
+    float: none;
+    width: 100%;
+    border: 0px;
+  }
+ 
+  #logo h1{
+    text-align: center;
+  }
+
+  #navbar ul{
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  #navbar ul li{
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #boxes .container{
+    flex-direction: column;
+  }
+
+  #boxes,
+  #boxes .box,
+  #main .box{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #sidebar{
+    margin-left: 0;
+
+  }
+}
+
+
